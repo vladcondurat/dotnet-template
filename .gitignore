@@ -1,0 +1,112 @@
+# General
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.sln.ide
+*.slnbinlog
+
+# Build results
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.csv
+*.out
+*.iobj
+*.ipdb
+*.dir
+*.err
+
+# OS Generated Files
+[Tt]humbs.db
+*.DS_Store
+ehthumbs.db
+desktop.ini
+
+# DotNet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+packages/
+.vs/
+.vscode/
+.vscode-test/
+.vsconfig
+
+# Rider specific
+.idea/
+*.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/.idea_modules
+.idea/modules.xml
+.idea/*.iml
+.idea/*.ipr
+
+# Resharper specific
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code settings
+.vscode/*
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Entity Framework
+Migrations/
+
+# Logs and Database
+*.log
+*.ldf
+*.mdf
+*.ndf
+
+# Publish folder
+.publish/
+
+# Coverage Reports
+*.coverage
+*.coveragexml
+*.coveragejson
+*.cov
+.coverage*
+
+# Generated files
+*.generated.cs
+Generated Files/
+TestResults/
+
+# Private keys and sensitive files
+*.pfx
+*.key
+*.crt
+*.cer
+secrets.json
+appsettings.*.json
+
+# IDE-specific folders
+.idea/
+.vscode/
+.vscode-test/
+*.code-workspace
+
+# Windows specific
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
