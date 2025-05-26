@@ -56,6 +56,16 @@ namespace Domain.Exceptions
         {
             return new Error(ErrorCodes.ServerError, message);
         }
+        
+        public static Error ExternalServiceError(string message)
+        {
+            return new Error(ErrorCodes.ExternalServiceError, message);
+        }
+
+        public static Error Forbidden(string message = "You do not have permission to access this resource.")
+        {
+            return new Error(ErrorCodes.Forbidden, message);
+        }
 
         public override string ToString() => $"{Code}: {Message}";
     }

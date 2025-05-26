@@ -1,8 +1,13 @@
+using Domain.Entities;
+
 namespace Domain.Repositories;
 
 public interface IUnitOfWork
 {
     IUserRepository Users { get; }
+    IProjectRepository Projects { get; }
+    IQuizRepository Quizzes { get; }
+    IFlashcardRepository Flashcards { get; }
 
     Task<int> SaveChangesAsync();
     int SaveChanges();

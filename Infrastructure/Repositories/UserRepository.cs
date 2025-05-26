@@ -15,12 +15,12 @@ public class UserRepository : Repository<User>, IUserRepository
     
     public async Task<User?> GetByUsernameAsync(string username)
     {
-        return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+        return await _context.Users.FirstOrDefaultAsync(u => u.UserName == username);
     }
     
     public async Task<bool> IsUsernameUniqueAsync(string username)
     {
-        return !await _context.Users.AnyAsync(u => u.Username == username);
+        return !await _context.Users.AnyAsync(u => u.UserName == username);
     }
     
 }

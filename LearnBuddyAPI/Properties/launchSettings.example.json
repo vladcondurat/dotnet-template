@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:38912",
+      "sslPort": 44321
+    }
+  },
+  "profiles": {
+    "Project (HTTP)": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5213",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CLIENT_BASE_URL": "http://localhost:3000",
+        "CLIENT_VERIFY_EMAIL_ENDPOINT": "/verify-email",
+        "CLIENT_RESET_PASSWORD_ENDPOINT": "/reset-password",
+        "GEMINI_API_KEY": "__GEMINI_API_KEY__",
+        "ConnectionStrings__DefaultConnection": "__DEFAULT_CONNECTION_STRING__",
+        "JwtSettings__Key": "__JWT_SIGNING_KEY__",
+        "JwtSettings__Issuer": "__JWT_ISSUER__",
+        "JwtSettings__Audience": "__JWT_AUDIENCE__",
+        "JwtSettings__ExpirationInMinutes": "__JWT_EXPIRY_MINUTES__",
+        "JwtSettings__RefreshTokenExpirationInDays": "__REFRESH_TOKEN_EXPIRY_DAYS__",
+        "EmailSettings__SendGridApiKey": "__SENDGRID_API_KEY__",
+        "EmailSettings__FromEmail": "__FROM_EMAIL__",
+        "EmailSettings__FromName": "__FROM_NAME__"
+      }
+    },
+    "Project (HTTPS)": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7069;http://localhost:5213",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CLIENT_BASE_URL": "http://localhost:3000",
+        "CLIENT_VERIFY_EMAIL_ENDPOINT": "/verify-email",
+        "CLIENT_RESET_PASSWORD_ENDPOINT": "/reset-password",
+        "GEMINI_API_KEY": "__GEMINI_API_KEY__",
+        "ConnectionStrings__DefaultConnection": "__DEFAULT_CONNECTION_STRING__",
+        "JwtSettings__Key": "__JWT_SIGNING_KEY__",
+        "JwtSettings__Issuer": "__JWT_ISSUER__",
+        "JwtSettings__Audience": "__JWT_AUDIENCE__",
+        "JwtSettings__ExpirationInMinutes": "__JWT_EXPIRY_MINUTES__",
+        "JwtSettings__RefreshTokenExpirationInDays": "__REFRESH_TOKEN_EXPIRY_DAYS__",
+        "EmailSettings__SendGridApiKey": "__SENDGRID_API_KEY__",
+        "EmailSettings__FromEmail": "__FROM_EMAIL__",
+        "EmailSettings__FromName": "__FROM_NAME__"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CLIENT_BASE_URL": "http://localhost:3000",
+        "CLIENT_VERIFY_EMAIL_ENDPOINT": "/verify-email",
+        "CLIENT_RESET_PASSWORD_ENDPOINT": "/reset-password",
+        "GEMINI_API_KEY": "__GEMINI_API_KEY__",
+        "ConnectionStrings__DefaultConnection": "__DEFAULT_CONNECTION_STRING__",
+        "JwtSettings__Key": "__JWT_SIGNING_KEY__",
+        "JwtSettings__Issuer": "__JWT_ISSUER__",
+        "JwtSettings__Audience": "__JWT_AUDIENCE__",
+        "JwtSettings__ExpirationInMinutes": "__JWT_EXPIRY_MINUTES__",
+        "JwtSettings__RefreshTokenExpirationInDays": "__REFRESH_TOKEN_EXPIRY_DAYS__",
+        "EmailSettings__SendGridApiKey": "__SENDGRID_API_KEY__",
+        "EmailSettings__FromEmail": "__FROM_EMAIL__",
+        "EmailSettings__FromName": "__FROM_NAME__"
+      }
+    }
+  }
+}

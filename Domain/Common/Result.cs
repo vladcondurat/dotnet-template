@@ -41,6 +41,11 @@ namespace Domain.Common
         {
             return Failure(Error.Conflict(message));
         }
+
+        public static Result ValidationError(IEnumerable<string> validationErrors)
+        {
+            return Failure(Error.ValidationError(validationErrors));
+        }
         
         public static implicit operator Result(Error error)
         {

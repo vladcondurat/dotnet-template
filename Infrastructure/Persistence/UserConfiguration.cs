@@ -8,16 +8,24 @@ namespace Infrastructure.Persistence
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("users");
-            builder.HasKey(u => u.Id);
-            builder.Property(u => u.Id)
-                .HasColumnType("uuid")
-                .HasDefaultValueSql("uuid_generate_v4()")
-                .ValueGeneratedOnAdd();
-            // builder.HasMany(u => u.Listings)
-            //     .WithOne(l => l.User)
-            //     .HasForeignKey(l => l.UserId)
-            //     .OnDelete(DeleteBehavior.Cascade);
+            builder.Property(u => u.CreatedAt)
+                .HasColumnName("created_at")
+                .IsRequired();
+                
+            builder.Property(u => u.UpdatedAt)
+                .HasColumnName("updated_at")
+                .IsRequired();
+                
+            builder.Property(u => u.RefreshToken)
+                .HasColumnName("refresh_token");
+                
+            builder.Property(u => u.RefreshTokenExpiryTime)
+                .HasColumnName("refresh_token_expiry_time");
+
+            builder.HasMany(u => u.Projects)
+                .WithOne(p => p.User)
+                .HasForeignKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

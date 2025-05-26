@@ -1,6 +1,5 @@
 using System.Reflection;
-using Application.Utils;
-using Domain.Repositories;
+using Application.Mappings;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +13,7 @@ public static class DependencyInjection
         services.AddMediatR(
             cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-        services.AddAutoMapper(typeof(MappingProfile));
+        services.AddAutoMapper(typeof(MappingAssemblyMaker).Assembly);
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
         

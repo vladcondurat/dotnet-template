@@ -1,4 +1,4 @@
-using Application.Use_Classes.Commands.UserCommands;
+using Application.UseCases.Commands.UserCommands;
 using FluentValidation;
 
 namespace Application.Validators.User;
